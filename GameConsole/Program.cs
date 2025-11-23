@@ -6,7 +6,7 @@ namespace GameConsole
     {
         static void Main(string[] args)
         {
-            List<IGamePlay> games = new List<IGamePlay>();
+            /*List<IGamePlay> games = new List<IGamePlay>();
             games.Add(new Games.TetrisGame());
             games.Add(new Games.FluffyBirdGame());
             games.Add(new Games.PacManGame());
@@ -16,8 +16,11 @@ namespace GameConsole
                 game.Play();
 				Console.Write($" Game:{game.Name}");
 				Console.WriteLine($"Score:{game.Score}");
-            }
+            }*/
+            Base.Screen mainScreen = new Base.Screen("home page");
+            mainScreen.Show();
 
 		}
+      
     }
 }
