@@ -8,17 +8,20 @@ public class Screen
     {
         get; set;
     }
+    
     public virtual void Show()
     {
         Console.Clear();
-        int spacing = (Console.WindowWidth-title.Length)/2;
-        Console.Write(new String(' ',spacing));
-        Console.WriteLine($"\t\t\t{title}");
-
+        centerText(title);
+    }
+    public void centerText(string text)
+    {
+    Console.SetCursorPosition((Console.WindowTop + Console.WindowWidth / 2)-text.Length/2, Console.CursorTop);
+    Console.WriteLine(text);
     }
     public Screen (string title)
     {
-        title= title;
+        this.title= title;
     }
 
 }

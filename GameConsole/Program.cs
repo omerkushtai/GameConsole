@@ -1,4 +1,5 @@
-﻿using GameConsole.Interfaces;
+﻿using GameConsole.Base;
+using GameConsole.Interfaces;
 
 namespace GameConsole
 {
@@ -16,10 +17,16 @@ namespace GameConsole
                 game.Play();
 				Console.Write($" Game:{game.Name}");
 				Console.WriteLine($"Score:{game.Score}");
-            }*/
+
+            }
             Base.Screen mainScreen = new Base.Screen("home page");
             mainScreen.Show();
-
+            */
+            //
+            Screen s= new Base.Screen("home page");
+            //s.Show();
+            Screen welcome = new pages.Welcomescreen();
+            welcome.Show();
 		}
       
     }
