@@ -23,10 +23,12 @@ namespace GameConsole
             mainScreen.Show();
             */
             //
-            Screen s= new Base.Screen("home page");
+            //Screen s= new Base.Screen("home page");
             //s.Show();
-            Screen welcome = new pages.Welcomescreen();
-            welcome.Show();
+            //Screen welcome = new pages.Welcomescreen();
+            //welcome.Show();
+            Consolegame game = new Consolegame();
+            game.startapp();
 		}
       
     }

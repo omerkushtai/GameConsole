@@ -10,3 +10,4 @@ internal class Mainmenu : Base.Menuscreen
         add("login", new Login());
     }
 }
+

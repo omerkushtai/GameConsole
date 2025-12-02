@@ -12,8 +12,8 @@ public class Login : Base.Screen
     {
         base.Show();
         centerText("enter your login details");
-        
-
         Console.ReadKey();
+        Screen next = new Gamemenu();
+        next.Show();
     }
 }

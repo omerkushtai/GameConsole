@@ -16,7 +16,7 @@ public class Screen
     }
     public void centerText(string text)
     {
-    Console.SetCursorPosition((Console.WindowTop + Console.WindowWidth / 2)-text.Length/2, Console.CursorTop);
+    Console.SetCursorPosition((Console.WindowTop + Console.WindowWidth) / 2-text.Length/2, Console.CursorTop);
     Console.WriteLine(text);
     }
     public Screen (string title)

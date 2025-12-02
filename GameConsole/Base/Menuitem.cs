@@ -2,7 +2,7 @@ using System;
 
 namespace GameConsole.Base;
 
-internal class Menuitem
+public class Menuitem
 {
 public String displayname
     {

@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace GameConsole.Base;
 
-internal class Menuscreen : Screen
+public class Menuscreen : Screen
 {
     private List<Menuitem> menuitems
     {
