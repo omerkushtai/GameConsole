@@ -15,11 +15,15 @@ public class User
     public string name{
         get; set;
     }
-    public User (String username,int password,string name)
+    public List<Models.Highscore> highscores{
+        get; set;
+    }
+    public User (String username,int password,string name,List<Models.Highscore> highscores=null)
     {
         this.username=username;
         this.password=password;
         this.name=name;
+
     }
 
 }
