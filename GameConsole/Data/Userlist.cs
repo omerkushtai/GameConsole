@@ -2,7 +2,7 @@ using System;
 
 namespace GameConsole;
 
-internal class Userlist
+public class Userlist
 {
     private static List<User> users;
     public Userlist()
@@ -15,7 +15,7 @@ internal class Userlist
         users.Add(user);
         }
     }
-    public User login(String username,int password)
+    public User login(String username,String password)
     {
         foreach(User user in users)
         {

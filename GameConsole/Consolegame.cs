@@ -6,6 +6,7 @@ namespace GameConsole;
 
 internal class Consolegame
 {
+    public static User user;
     private Screen mainpage;
     public Consolegame()
     {

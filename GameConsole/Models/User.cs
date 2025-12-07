@@ -8,7 +8,7 @@ public class User
     {
         get; set;
     }
-    public int password
+    public String password
     {
         get; set;
     }
@@ -18,7 +18,7 @@ public class User
     public List<Models.Highscore> highscores{
         get; set;
     }
-    public User (String username,int password,string name,List<Models.Highscore> highscores=null)
+    public User (String username,String password,string name,List<Models.Highscore> highscores=null)
     {
         this.username=username;
         this.password=password;
