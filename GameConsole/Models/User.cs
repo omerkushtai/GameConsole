@@ -1,14 +1,14 @@
 using System;
 
-namespace GameConsole;
+namespace GameConsole.Models;
 
 public class User
 {
-    public String username
+    public string username
     {
         get; set;
     }
-    public String password
+    public string password
     {
         get; set;
     }
@@ -18,7 +18,7 @@ public class User
     public List<Models.Highscore> highscores{
         get; set;
     }
-    public User (String username,String password,string name,List<Models.Highscore> highscores=null)
+    public User (string username,string password,string name,List<Models.Highscore> highscores=null)
     {
         this.username=username;
         this.password=password;

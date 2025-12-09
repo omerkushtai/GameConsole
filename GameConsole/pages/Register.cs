@@ -1,24 +1,24 @@
 using System;
-using System.Net.NetworkInformation;
 
+using GameConsole.Base;
+using GameConsole.Data;
+using GameConsole.Models;
 namespace GameConsole.pages;
 
-public class Register : Base.Screen
+public class Register : Screen
 {
-    private string username
-    {
-        get; set;
-    }
-    private string password
-    {
-        get; set;
-    }
+    private string name;
+    
+    private string username;
+    
+    private string password;
+    
     public Register() : base("register screen")
     {
         base.Show();
         centerText("enter your registration details");
     }
-    public override void Show(object data)
+    public override void Show()
     {
         base.Show();
         centerText("enter your registration details");
@@ -34,7 +34,7 @@ public class Register : Base.Screen
         }
         else
         {
-            Data.Userlist.register(new Models.User (username,password,name));
+            Userlist.register(new User (username,password,name));
             centerText("Registration Successful");
             Console.ReadKey();
             Screen nextscreen=new Welcomescreen();

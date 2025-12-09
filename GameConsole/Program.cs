@@ -29,6 +29,7 @@ namespace GameConsole
             //welcome.Show();
             Consolegame game = new Consolegame();
             game.startapp();
+            System.Console.WriteLine("exiting app..." );
 		}
       
     }

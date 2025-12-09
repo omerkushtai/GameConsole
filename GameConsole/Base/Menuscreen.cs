@@ -13,7 +13,7 @@ public class Menuscreen : Screen
     {
         menuitems = new List<Menuitem>();
     }
-    public void add(Menuitem item)
+    public void add(string v, Menuitem item)
     {
         if(item != null ){
         menuitems.Add(item);
@@ -51,6 +51,8 @@ public class Menuscreen : Screen
         if(choice <= menuitems.Count)
         {
             menuitems[choice-1].screen.Show();
+            Show();
+            
         }
         Console.ReadKey();
     }

@@ -10,5 +10,6 @@ public class Gamemenu : Base.Menuscreen
         add("Fluffy bird",new Gamescreen(new FluffyBirdGame()));
         add("pacman",new Gamescreen(new PacManGame()));
         add("Tetris",new Gamescreen(new TetrisGame()));
+        add("profile menu", new Profilemenu());
     }
 }

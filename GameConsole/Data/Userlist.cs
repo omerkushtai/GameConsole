@@ -1,21 +1,25 @@
 using System;
+using GameConsole.Models;
+using System.Collections.Generic;
 
-namespace GameConsole;
+namespace GameConsole.Data;
 
 public class Userlist
 {
-    private static List<User> users;
-    public Userlist()
+    private static List<User> users=new List<User>()
     {
-        users=new List<User>();
-    }
-    public void register(User user)
+        new User("omer","omer123","Omer"),
+        new User("admin","admin123","Admin")
+        
+    };
+    
+    public static void register(User user)
     {
         if(user != null){
         users.Add(user);
         }
     }
-    public User login(String username,String password)
+    public static User login(String username,String password)
     {
         foreach(User user in users)
         {

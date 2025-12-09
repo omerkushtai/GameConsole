@@ -1,6 +1,7 @@
 using System;
 using GameConsole.Base;
 using GameConsole.pages;
+using GameConsole.Models;
 
 namespace GameConsole;
 
