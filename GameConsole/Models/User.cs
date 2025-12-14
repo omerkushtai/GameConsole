@@ -15,10 +15,10 @@ public class User
     public string name{
         get; set;
     }
-    public List<Models.Highscore> highscores{
+    public List <HighScore> Highscores{
         get; set;
     }
-    public User (string username,string password,string name,List<Models.Highscore> highscores=null)
+    public User (string username,string password,string name,List<HighScore> highscores=null)
     {
         this.username=username;
         this.password=password;
