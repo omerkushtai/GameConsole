@@ -8,5 +8,6 @@ public class Profilemenu : Base.Menuscreen
     {
         add("view profile", new Viewprofile());
         add("edit profile", new Updateprofile());
+        add("game history", new HistoryScreen()); 
     }
 }
