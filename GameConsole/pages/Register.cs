@@ -20,6 +20,7 @@ public class Register : Screen
     }
     public override void Show()
     {
+        Console.BackgroundColor = ConsoleColor.DarkYellow;
         base.Show();
         centerText("enter your registration details");
         centerText("enter name");

@@ -11,6 +11,7 @@ public class Viewprofile: Base.Screen
 
     public override void Show()
     {
+        Console.BackgroundColor = ConsoleColor.DarkCyan;
         base.Show();
         centerText("Username: " + Consolegame.user.username);
         centerText("password: " + Consolegame.user.password);

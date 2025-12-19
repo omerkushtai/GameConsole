@@ -10,6 +10,7 @@ internal class Welcomescreen : Base.Screen
     }
     public override void Show()
     {
+        Console.BackgroundColor = ConsoleColor.DarkGray;
         base.Show();
         string text = "Welcome to Game Console!";
         centerText(text);

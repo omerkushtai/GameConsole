@@ -20,6 +20,7 @@ using System.Threading.Tasks;
         }
         public override void Show()
         {
+            Console.BackgroundColor = ConsoleColor.DarkGreen;
             base.Show();
             Console.WriteLine("choose display");
             centerText("1- Last Game Played");

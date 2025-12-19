@@ -12,10 +12,11 @@ public class Login : Base.Screen
     }
     public override void Show()
     {
+        Console.BackgroundColor = ConsoleColor.DarkBlue;
         base.Show();
         centerText("press any key to continue to Login Menu");
         Console.ReadKey();
-        centerText("enter usernme and password");
+        centerText("enter username and password");
         String username=Console.ReadLine();
         String password=Console.ReadLine();
        if( username==null || password==null)

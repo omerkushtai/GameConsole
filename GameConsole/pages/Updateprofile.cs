@@ -11,6 +11,7 @@ public class Updateprofile : Base.Screen
     }
     public override void Show()
     {
+        Console.BackgroundColor = ConsoleColor.DarkMagenta;
         base.Show();
         User currentUser=Consolegame.user;
         centerText("press 1 to update username or 2 to update password");
